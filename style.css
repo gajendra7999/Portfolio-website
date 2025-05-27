@@ -1,0 +1,121 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #2f302d;
+  color: #f8f2f2;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background: linear-gradient(to bottom, #e2af90, #8f4903);
+  padding: 1rem;
+  color: white;
+  text-align: center;
+}
+
+nav {
+  margin-top: 0.5rem;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem 10%;
+}
+
+form {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input,
+form textarea {
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 0.8rem;
+  background-color: #0072ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-box {
+  position: fixed;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  z-index: 999;
+}
+
+.btn-box a {
+  padding: 12px 25px;
+  background-color: #0072ff;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  animation: blink 3s infinite;
+  box-shadow: 0 4px 15px rgba(0, 114, 255, 0.5);
+  transition: transform 0.3s;
+}
+
+.btn-box a:hover {
+  transform: scale(1.1);
+}
+
+/* Blinking animation */
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 0.8;
+  }
+
+  50% {
+    opacity: 0.3;
+  }
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+.social-icons {
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 60px;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #00c6ff;
+}
